@@ -4,7 +4,7 @@ on: push
 
 jobs:
   echo-print:
-    runs-on: ubuntu
+    runs-on: ubuntu-latest
     steps:
       - name: rabbitmq-rpc-api
         run: echo "rabbitmq-api"
