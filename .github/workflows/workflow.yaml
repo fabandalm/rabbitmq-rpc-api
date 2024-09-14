@@ -1,0 +1,11 @@
+name: rabbitmq-rpc-api
+
+on: push
+
+jobs:
+  echo-print:
+    runs-on: ubuntu
+    steps:
+      - name: rabbitmq-rpc-api
+        run: echo "rabbitmq-api"
+
