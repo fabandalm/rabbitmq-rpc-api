@@ -8,4 +8,13 @@ jobs:
     steps:
       - name: rabbitmq-rpc-api
         run: echo "rabbitmq-api"
+  echo-fail:
+    runs-on: ubuntu-latest
+    steps:
+      - name: failed
+        run: | 
+          echo "rabbitmq-api"
+          exit 1
+      - name: completed
+        run: echo "Completed"
 
